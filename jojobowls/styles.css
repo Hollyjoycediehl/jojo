@@ -1,11 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;700&display=swap')
+
+.bg-light{
+  color:#FFFFFF;
+}
+
+#brand:hover{
+  animation: brand 1.5s 2 alternate forwards;
+}
+
+@keyframes brand{
+ 0%{
+   transform:rotateZ(0deg);
+ }
+ 100%{
+   transform:rotateZ(-25deg);
+ }
+ transation-timing-function: ease-in-ease-out;
+}
+
+.navbar{
+  background-color: #222558;
+}
+
+
+.nav-item{
+  font-family: sans-serif;
+  font-size: 2.1rem;
+}
+
+.nav{
+  text-align: right;
+
+}
 
 .jumping{
   background: url(images/strawberries.png);
+  background-blend-mode: lighten;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:750px;
+  background-size: cover;
+  overflow: hidden;
 }
-.bar{
-  height:55px;
+
+.jumping h1{
+  color: var(--white);
+  font-size: 6.6rem;
+  line-height: 6.7rem;
+    text-shadow: 0 0 3px #222558;
+}
+
+
+#fruit{
+  background-color: #E8E3E9;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+#fruit h2{
+  color:#222558;
+  font-size: 4.5rem;
+  line-height: 5.75rem;
+}
+
+#fruit p{
+  font-family: var(--font-roboto);
+  font-size: 1.8rem;
+  line-height: 3.7rem;
+  font-weight: var(--weight-medium);
+  color:#222558;
+}
+
+#fruit strong{
+  text-decoration: underline;
+  color: #DC7F92;
+  font-weight: var(--weight-bold);
+}
+
+#fruit img{
+   transform: translateX(5%);
+}
+
+#fruitimg:hover{
+  animation: bowlhover 3.5s 3 alternate forwards;
+}
+
+@keyframes bowlhover {
+  0%{
+
+    transform:rotateZ(0deg);
+  }
+  100%{
+
+    transform:rotateZ(20deg);
+  }
+  transition-timing-funtion: ease-in-ease-out;
+}
+
+
+#jump{
+animation: jump 2.5s 1 forwards;
+animation-delay: 0.75s;
+position: relative;
+}
+
+@keyframes jump {
+  0%{
+    left: 0px;
+    top: -50px;
+  }
+  100%{
+    left: 75px;
+    top: 25px;
+  }
+  transition-delay: 2s;
+transition-timing-funtion: ease-in;
+}
+
+
+.jumping img{
+max-width: 90%;
+max-height: 90%;
+position:relative;
+}
+
+@keyframes mymove{
+  from {background-color: #DC7F92}
+  to {background-color: #961E36}
+  transition-timing-funtion: ease-in-ease-out;
+}
+section{
+  height: 55px;
   width:auto;
-  background:;
+background-color: #DC7F92;
+animation: mymove 4s infinite alternate;
 }
 
 nav{

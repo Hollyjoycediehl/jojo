@@ -5,21 +5,23 @@
 <title>JoJo Bowls</title>
 <link type="text/css" rel="stylesheet" href="styles.css">
 <link type="text/css" rel="stylesheet" href="bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.js"> </script>
 </head>
   <body>
     <header>
 <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
                 <div class="container-fluid" >
-                <a class="navbar-brand" href="index.html" >
-                <img src="" width="120" hieght="120" class="d-inline-block align-top">
+                <a class="navbar-brand ml-1" href="index.html" >
+                <img src="images/jojologo.png" class="d-inline-block align-top" id="brand">
                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
-  <span class="navbar-toggler-icon" ></span>
+  <span class="navbar-toggler-icon"></span>
                     </button>
                    <div class="collaspe navbar-collapse" id="collapsibleNavbar" >
-                  <ul class="nav navbar-nav mr-auto">
-                 <li class="nav-item"><a class="nav-link" href="">Menu</a></li>
-                  <li class="nav-item"><a class="nav-link" href="">About</a></li>
+                  <ul class="nav navbar-nav ml-auto mr-2">
+                 <li class="nav-item pr-lg-3 pr-md-3 pr-0"><a class="nav-link" href="">Menu</a></li>
+                  <li class="nav-item pr-lg-3 pr-md-3 pr-0""><a class="nav-link" href="">About</a></li>
                  <li class="nav-item"><a class="nav-link"href="">Find Us</a></li>
                  </ul>
                      </div>
@@ -28,23 +30,32 @@
   </header>
 <main class="mt-5">
 <div class="jumping mt-5">
-  <div class="col-8">
-      <img class="img-fluid" src="images/jumping.png">
+  <div class="row">
+  <div class="col-7 order-1">
+      <img class="img-fluid pt-5" id="jump" src="images/jumping.png">
       </div>
-  <div class="jumping_right">
+  <div class="jumping_right col-4 order-2 my-auto mx-auto">
   <h1>fruit so good, <br> you’ll dive right in</h1>
   <p class="lead">(and we won’t judge)</p>
   </div>
   </div>
-  <div class="bar">
-    </div>
-    <div class="container">
-      <h2>fresh fruit is our fuel people are our passion</h2>
-      <p>At JoJo Bowls we believe that food is meant to bring joy and nourishment.</p>
-      <p> </p>
-      <div class="bar">
-        </div>
+  </div>
+  <section>
+    </section>
+    <div class="container-fluid" id="fruit">
+      <div class="row">
+        <div class="col-6 pt-5 pb-5 my-auto mx-auto" >
+      <h2 class="pb-2">fresh fruit is our fuel<br> people are our passion</h2>
+      <p >At JoJo Bowls we believe that food is meant to bring joy and nourishment. Everything we make is blended with fun and key nutrients to get you through the day.vida a, auctor a diam. Proin sodales nibh at tortor faucibus fringilla. Integer accumsan, <strong> nisi sed sagittis vulputate, ligula ex mattis quam, </strong> et pulvinar purus ex a nisi. Donec consectetur ex posuere  bibendum molestie. <br> </p>
+<p>Sed risus erat, porta non viverra id, congue vitae quam. Ut ornare dui mauris, in sagittis nunc facilisis id. Ut venenactor a diam. Proin sodales nibh at tortor faucibus fringilla. Integer accumsan, nisi sed sagittis vulpubulum sem sed ornare. <strong> Vestibulum a odio imperdiet, rhoncus tortor hendrerit, </strong a diam. Proin sodales nibh at tortor faucibus fringilla. Integer accumsan, nisi sed sagittis vulputate, ligula exquam.ondimentum cs augue fermentum, at maximus metus rhoncus.</p>
+</div>
+<div class="col-5" id="fruitimg">
+<img class="image-fluid my-auto mx-auto pt-3 pb-3" " src="images/jojopinkbowl.png">
+</div>
+</div>
       </div>
+      <section>
+        </section>
       <div class="container">
         <h3>Menu</h3>
         <p></p>
@@ -103,7 +114,7 @@
         </li>
         <li class="list-item">
       <h5>The Flamingo</h5>
-      < p>The signature oatmeal bowl bursting with amino acids and enriching vitamins from locally sourced berries.</p>
+      <p>The signature oatmeal bowl bursting with amino acids and enriching vitamins from locally sourced berries.</p>
       </li>
       <li class="list-item">
     <h5>Cinnamon-Roll Caramel Apple</h5>
@@ -112,10 +123,13 @@
           </ul>
           </div>
     </div>
+    <div classs="container">
+      <div class="row">
+        </div>
+      </div>
 </main>
-<footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-</footer>  
+<footer role="footer">
+
+</footer>
 </body>
 </html>
