@@ -15,8 +15,67 @@
  100%{
    transform:rotateZ(-25deg);
  }
- transation-timing-function: ease-in-ease-out;
+ transition-timing-function: ease-in-ease-out;
 }
+#menu h3{
+  color:#222558;
+  font-size: 4.5rem;
+  line-height: 5.75rem;
+  text-align: center;
+}
+
+#menu{
+  background: url(images/wood.png);
+  background-blend-mode: overlay;
+  background-color: #FFE3E9;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#menu li{
+  list-style:none;
+}
+
+#menu h4{
+  font-size: 3.8rem;
+  color:#961E36;
+}
+
+#menu h5{
+ font-size: 2.8rem;
+ color:#222558;
+}
+
+#menu p{
+  font-size: 1.6rem;
+  line-height: 2.35rem;
+    color:#222558;
+    font-weight: var(--weight-bold);
+    font-family: var(--font-roboto);
+}
+
+#menu li:hover{
+  animation: li 0.5s 1 forwards;
+}
+
+@keyframes li{
+  0%{
+      border-left: 0px solid;
+
+    border-left-color: #961E36;
+  }
+  100%{
+    border-left: 6px solid;
+      border-top-left-radius: 1px;
+      border-spacing: 5px 0px 5px;
+  border-left-color: #961E36;
+}
+ transition-timing-function:: ease-in;
+}
+
 
 .navbar{
   background-color: #222558;
@@ -31,6 +90,33 @@
 .nav{
   text-align: right;
 
+}
+
+#photo-slide{
+  overflow: hidden;
+}
+
+#photo-slide img{
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+#photo-slide{
+  transform: translate(-250px, 20%);
+  position:absolute;
+
+}
+#photo-slide:hover{
+  animation: smoothie-slide 3s 1 forwards;
+}
+
+@keyframes smoothie-slide {
+  0%{
+  transform: translate(-250px, 20%);
+  }
+  100%{
+    transform: translate(0px, 20%);
+  }
 }
 
 .jumping{
@@ -48,7 +134,14 @@
   color: var(--white);
   font-size: 6.6rem;
   line-height: 6.7rem;
-    text-shadow: 0 0 3px #222558;
+    text-shadow: 4px 2px 6px #222558;
+}
+
+.jumping .lead{
+  color: var(--white);
+  font-size: 4.0rem;
+  font-weight: var(--weight-bold);
+    text-shadow: 2px 0 3px #222558;
 }
 
 
@@ -75,7 +168,7 @@
 
 #fruit strong{
   text-decoration: underline;
-  color: #DC7F92;
+  color: #961E36;
   font-weight: var(--weight-bold);
 }
 
@@ -89,11 +182,9 @@
 
 @keyframes bowlhover {
   0%{
-
     transform:rotateZ(0deg);
   }
   100%{
-
     transform:rotateZ(20deg);
   }
   transition-timing-funtion: ease-in-ease-out;
@@ -102,7 +193,7 @@
 
 #jump{
 animation: jump 2.5s 1 forwards;
-animation-delay: 0.75s;
+animation-delay: 0.5s;
 position: relative;
 }
 
@@ -112,11 +203,11 @@ position: relative;
     top: -50px;
   }
   100%{
-    left: 75px;
-    top: 25px;
+    left: 100px;
+    top: 50px;
   }
   transition-delay: 2s;
-transition-timing-funtion: ease-in;
+transition-timing-function: ease-in;
 }
 
 
@@ -148,8 +239,8 @@ nav{
 
 .navbar .navbar-nav .nav-link{
   font-size: 1.8rem;
-
 }
+
 
 html{
   margin: auto;
