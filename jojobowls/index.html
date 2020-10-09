@@ -3,23 +3,26 @@
 <head>
 <meta charset="UTF-8" />
 <title>JoJo Bowls</title>
+      <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 <link type="text/css" rel="stylesheet" href="styles.css">
 <link type="text/css" rel="stylesheet" href="bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.js"> </script>
 </head>
   <body>
     <header>
 <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
                 <div class="container-fluid" >
-                <a class="navbar-brand" href="index.html" >
-                <img src="" width="120" hieght="120" class="d-inline-block align-top">
+                <a class="navbar-brand ml-1" href="index.html" >
+                <img src="images/jojologo.png" class="d-inline-block align-top" id="brand">
                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
-  <span class="navbar-toggler-icon" ></span>
+  <span class="navbar-toggler-icon"></span>
                     </button>
                    <div class="collaspe navbar-collapse" id="collapsibleNavbar" >
-                  <ul class="nav navbar-nav mr-auto">
-                 <li class="nav-item"><a class="nav-link" href="">Menu</a></li>
-                  <li class="nav-item"><a class="nav-link" href="">About</a></li>
+                  <ul class="nav navbar-nav ml-auto mr-2">
+                 <li class="nav-item pr-lg-3 pr-md-3 pr-0"><a class="nav-link" href="#menu">Menu</a></li>
+                  <li class="nav-item pr-lg-3 pr-md-3 pr-0""><a class="nav-link" href="">About</a></li>
                  <li class="nav-item"><a class="nav-link"href="">Find Us</a></li>
                  </ul>
                      </div>
@@ -28,29 +31,38 @@
   </header>
 <main class="mt-5">
 <div class="jumping mt-5">
-  <div class="col-8">
-      <img class="img-fluid" src="images/jumping.png">
+  <div class="row">
+  <div class="col-7 order-1">
+      <img class="img-fluid pt-5" id="jump" src="images/jumping.png">
       </div>
-  <div class="jumping_right">
+  <div class="jumping_right col-4 order-2 my-auto mx-auto">
   <h1>fruit so good, <br> you’ll dive right in</h1>
   <p class="lead">(and we won’t judge)</p>
   </div>
   </div>
-  <div class="bar">
-    </div>
-    <div class="container">
-      <h2>fresh fruit is our fuel people are our passion</h2>
-      <p>At JoJo Bowls we believe that food is meant to bring joy and nourishment.</p>
-      <p> </p>
-      <div class="bar">
-        </div>
+  </div>
+  <section>
+    </section>
+    <div class="container-fluid" id="fruit">
+      <div class="row">
+        <div class="col-6 pt-5 pb-5 my-auto mx-auto" >
+      <h2 class="pb-2">fresh fruit is our fuel<br> people are our passion</h2>
+      <p >At JoJo Bowls we believe that food is meant to bring joy and nourishment. Everything we make is blended with fun and key nutrients to get you through the day.vida a, auctor a diam. Proin sodales nibh at tortor faucibus fringilla. Integer accumsan, <strong> nisi sed sagittis vulputate, ligula ex mattis quam, </strong> et pulvinar purus ex a nisi. Donec consectetur ex posuere  bibendum molestie. <br> </p>
+<p>Sed risus erat, porta non viverra id, congue vitae quam. Ut ornare dui mauris, in sagittis nunc facilisis id. Ut venenactor a diam. Proin sodales nibh at tortor faucibus fringilla. Integer accumsan, nisi sed sagittis vulpubulum sem sed ornare. <strong> Vestibulum a odio imperdiet, rhoncus tortor hendrerit,</strong> a diam. Proin sodales nibh at tortor faucibus fringilla. Integer accumsan, nisi sed sagittis vulputate, ligula exquam.ondimentum cs augue fermentum, at maximus.</p>
+</div>
+<div class="col-5" id="fruitimg">
+<img class="image-fluid my-auto mx-auto pt-3 pb-3" " src="images/jojopinkbowl.png">
+</div>
+</div>
       </div>
-      <div class="container">
-        <h3>Menu</h3>
-        <p></p>
-        <div class="row">
-          <h4>Bowls</h4>
-          <ul>
+      <section>
+        </section>
+      <div class="container-fluid pt-5 pb-5" id="menu">
+        <h3 class="pt-5 mb-4">Menu</h3>
+        <div class="row  pt-5 pl-5">
+        <div class="col my-auto mx-auto pb-4">
+          <h4 class="pb-3">Bowls $8.50</h4>
+          <ul class="flex">
             <li class="list-item">
           <h5>Mango, Pinapple, Papaya</h5>
           <p>A tropical bounty of mango, pineapple, and papaya bursting with vitamins and restorative amnino acids.</p>
@@ -69,9 +81,12 @@
     </li>
           </ul>
           </div>
-            <div class="row">
-          <h4>Smoothies</h4>
-          <ul>
+          </div>
+          <div class="col pl-5">
+          <h4 class="pb-3">Smoothies $5.50</h4>
+
+          <div class="row pl-4 mb-4">
+          <ul class="flex">
             <li class="list-item">
           <h5>Sunny Treat</h5>
           <p>Vitamin C at its finest. A blend of tropical fruits and coconut milk that will get you in the island mood.</p>
@@ -82,40 +97,69 @@
         </li>
         <li class="list-item">
       <h5>The Flamingo Smoothie</h5>
-      <p>The offical JoJo smoothie. Mixed with a pleathora of forest berries and strawberries.</p>
+       <p>The offical JoJo smoothie. Mixed with a pleathora of forest berries and strawberries.</p>
       </li>
       <li class="list-item">
     <h5>Honey Ginger Pear</h5>
-      <p>A frozen matcha treat infused with honey roasted asian pears with spicy notes of ginger.</p>
+       <p>A frozen matcha treat infused with honey roasted asian pears with spicy notes of ginger.</p>
     </li>
-          </ul>
+           </ul>
           </div>
-          <div class="row">
-          <h4>Oatmeal</h4>
-          <ul>
+          </div>
+            <div class="col pl-5">
+          <h4 class="pb-3">Oatmeal $7.50</h4>
+            <div class="row pl-4">
+          <ul class="flex pb-5">
             <li class="list-item">
           <h5>Mango, Pinapple, Papaya</h5>
-          <p>A beachy take on oatmeal. Oatmeal soaked in coconut milk with tropical fruits and coconut shavings.</p>
+           <p>A beachy take on oatmeal. Oatmeal soaked in coconut milk with tropical fruits and coconut shavings.</p>
           </li>
           <li class="list-item">
         <h5>Happy Monkey</h5>
-        <p>Chocolate oatmeal with crunchy vanilla granola, roasted pecans, sliced bananas and a protien peanutbutter swirl.</p>
+         <p>Chocolate oatmeal with crunchy vanilla granola, roasted pecans, sliced bananas and a protien peanutbutter swirl.</p>
         </li>
         <li class="list-item">
       <h5>The Flamingo</h5>
       <p>The signature oatmeal bowl bursting with amino acids and enriching vitamins from locally sourced berries.</p>
       </li>
-      <li class="list-item">
+      <li class="list-item pb-3">
     <h5>Cinnamon-Roll Caramel Apple</h5>
     <p>Cinnamon spiced oatmeal with chucks of local honey crisp apples and a carmel cream cheese drizzle.</p>
     </li>
           </ul>
           </div>
+          </div>
     </div>
+    <div classs="container-fluid" id="photo">
+      <div class="row  my-auto" id="photo-slide">
+
+        <div class="col-4 my-auto">
+        <img class="image-fluid pr-2 pb-4" id="photo-smoothie" src="images/smoothie.png">
+            <img class="image-fluid" id="photo-raspberry" src="images/raspberrybowl.png">
+            </div>
+            <div class="col-8 my-auto">
+        <img class="image-fluid" id="photo-taupe" src="images/taupebowl.png">
+        </div>
+        </div>
+        </div>
 </main>
-<footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/bootstrap.js"></script>
+<footer role="footer" class="pt-5 pb-5">
+  <div class="container pt-3">
+    <div class="row  pl-5 mb-4">
+        <div class="col-8">
+<h3 class="flex-item">Follow the Fruit</h3>
+</div>
+</div>
+<div class="row  pl-5">
+  <div class="col-8">
+<p>Mauris quis iaculis diam. Aliquam a odio id arcu feugiat hendrerit sit amet eu diam. Duis non egestas augue. Integer vestibulum gravida dictum. In nec finibus est. Interdum et malesuada fames ac ante ipsum primis in fauc</p> <br>
+<p>
+ fermentum nec quam in luctus. Morbi aliquet mauris ex, vel vulputate massa viverra eget. Aliquam in sem suscipitulis ligula, non congue nibh gravida eu. Sed eu nibh erat.</p>
+
+ <p>Mauris quis iaculis diam. Aliquam a odio id arcu feugiat hendrerit </p>
+ </div>
+   </div>
+ </div
 </footer>
 </body>
 </html>
